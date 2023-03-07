@@ -1,0 +1,51 @@
+<!--made by Mohan Oli-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="game.css"/>
+        <link rel="shortcut icon" type="image/png" href="img/favicon_tic_tac_toe.png"/>
+        <script src="game.js" defer></script>
+    </head>
+    <body>
+        <div id="background-container">
+            <div id="head-display">
+                <h1>TIC TAC TOE</h1>
+                <p>Click below either 'x' or 'o'</p>
+            </div>
+            <div id="turn-display">
+                
+                <img src="img/cross-img.svg" id="img-cross" onclick="begin('cross')"/>
+                <img src="img/arrow-img.svg" id="img-arrow"/>
+                <img src="img/circle-img.svg" id="img-circle" onclick="begin('circle')"/>
+            </div><br>
+            <div id="table-container">
+                <table id="table-self">
+                    <tr>
+                        <th><div id="0-0" class="div" onclick="mark(0,0)"></div></th>
+                        <th><div id="0-1" class="div" onclick="mark(0,1)"></div></th>
+                        <th><div id="0-2" class="div" onclick="mark(0,2)"></div></th>
+                    </tr>
+                    <tr>
+                        <th><div id="1-0" class="div" onclick="mark(1,0)"></div></th>
+                        <th><div id="1-1" class="div" onclick="mark(1,1)"></div></th>
+                        <th><div id="1-2" class="div" onclick="mark(1,2)"></div></th>
+                    </tr>
+                    <tr>
+                        <th><div id="2-0" class="div" onclick="mark(2,0)"></div></th>
+                        <th><div id="2-1" class="div" onclick="mark(2,1)"></div></th>
+                        <th><div id="2-2" class="div" onclick="mark(2,2)"></div></th>
+                    </tr>
+                </table>
+            </div><br>
+            <div id="btn-container">
+                <button type="button" id="new-game" class="btn" onclick="newGame()">New</button>
+                <button type="button" id="quit" class="btn" onClick="quitGame()">Quit</button>
+            </div>
+        </div>
+    </body>
+    
+</html>

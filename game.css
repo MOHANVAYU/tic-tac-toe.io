@@ -60,6 +60,12 @@
     font-size: 24px;
     color:#fff;
     border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: 0.1s;
+}
+.btn:hover{
+    background-color: rgb(249, 111, 86);
+    box-shadow: 0 0 0 0;
 }
 #btn-container{
     width:200px;
@@ -107,4 +113,7 @@
     font-size: 24px;
     color:#fff;
     border-radius: 5px;
+}
+#logo{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
